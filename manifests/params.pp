@@ -48,6 +48,14 @@ class passenger::params {
       $passenger_root         = "/usr/lib/ruby/gems/1.8/gems/passenger-${passenger_version}"
       $mod_passenger_location = "/usr/lib/ruby/gems/1.8/gems/passenger-${passenger_version}/ext/apache2/mod_passenger.so"
     }
+    'gentoo': {
+      $package_name           = 'www-apache/passenger'
+      $passenger_package      = 'www-apache/passenger'
+      $gem_path               = '/usr/lib/ruby/gems/1.9.1/gems'
+      $gem_binary_path        = '/usr/lib/ruby/gems/1.9.1/gems/bin'
+      $passenger_root         = "/usr/lib/ruby/gems/1.9.1/gems/passenger-${passenger_version}"
+      $mod_passenger_location = "/usr/lib/ruby/gems/1.9.1/gems/passenger-${passenger_version}/ext/apache2/mod_passenger.so"
+    }
     'darwin':{
       $package_name           = 'passenger'
       $passenger_package      = 'passenger'
