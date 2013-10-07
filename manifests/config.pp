@@ -59,7 +59,7 @@ class passenger::config {
         owner   => '0',
         group   => '0',
         mode    => '0644',
-        notify  => Service['httpd'],
+        notify  => Service['apache2'],
       }
     }
     default:{

@@ -51,10 +51,10 @@ class passenger::params {
     'gentoo': {
       $package_name           = 'www-apache/passenger'
       $passenger_package      = 'www-apache/passenger'
-      $gem_path               = '/usr/lib/ruby/gems/1.9.1/gems'
-      $gem_binary_path        = '/usr/lib/ruby/gems/1.9.1/gems/bin'
-      $passenger_root         = "/usr/lib/ruby/gems/1.9.1/gems/passenger-${passenger_version}"
-      $mod_passenger_location = "/usr/lib/ruby/gems/1.9.1/gems/passenger-${passenger_version}/ext/apache2/mod_passenger.so"
+      $gem_path               = ''
+      $gem_binary_path        = ''
+      $passenger_root         = '/usr/lib64/ruby/vendor_ruby/phusion_passenger'
+      $mod_passenger_location = '/usr/lib64/apache2/modules/mod_passenger.so'
     }
     'darwin':{
       $package_name           = 'passenger'
